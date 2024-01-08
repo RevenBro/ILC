@@ -1,0 +1,127 @@
+
+
+.site-header {
+    padding: 56px 0 120px;
+}
+
+.header {
+    @include display($items: start)
+}
+
+.header__logo-inner-wrap {
+    @include display($space: start);
+    margin-bottom: 48px;
+}
+
+.header__top-text-wrapper {
+    width: 227px;
+    margin-left: 64px;
+}
+
+.header__top-text {
+    @include textStyle($lineHeight: 20px);
+}
+
+.navbar__list {
+    @include display($space: start);
+    gap: 48px;
+}
+
+.navbar__link {
+    @include textStyle($color: #000, $fontSize: 16px, $fontWeight: 700);
+    transition: color 0.4s linear;
+    letter-spacing: 0.48px;
+    
+    &:hover {
+        @include textStyle($color: $BlueColor, $fontSize: 16px, $fontWeight: 700);
+
+    }
+}
+
+.header__contacts {
+    @include display($items: center);
+    gap: 36px;
+}
+
+.contact__phone {
+    @include textStyle($fontSize: 16px, $fontWeight: 700, $lineHeight: 18px);
+
+    &:hover {
+        color: $BlueColor;
+    } 
+}
+
+.contact__sign-in {
+    @include button();
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.contact__hamburger-btn {
+    @include display($items: center, $space: center);
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: #DEE6EF;
+    border: none;
+    display: none;
+}
+
+.contact__mobile-btn {
+    @include display($items: center, $space: center);
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
+    border: none;
+    display: none;
+}
+
+@media (max-width: 947px) {
+    .navbar__list {
+        gap: 30px;
+    }
+}
+
+@media (max-width:845px) {
+    .navbar {
+        display: none;
+    }
+
+    .header__logo-inner-wrap {
+        margin: 0;
+    }
+
+    .header__top-text-wrapper {
+        display: none;
+    }
+
+    .contact__hamburger-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 680px) {
+    .site-header {
+        padding: 22px 0 48px;
+    }
+
+    .contact__phone, .contact__sign-in {
+        display: none;
+    }
+
+    .contact__mobile-btn {
+        display: block;
+    }
+
+    .header__contacts {
+        gap: 8px;
+    }
+
+    .header__logo-img {
+        width: 120px;
+        height: 40px;
+    }
+}

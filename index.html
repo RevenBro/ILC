@@ -3,38 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Your site name</title>
+    <title>ILC</title>
 </head>
 <body>
     <!-- Site Header start -->
+    
     <header class="site-header">
         <div class="container">
             <div class="header">
-                <!-- ... -->
+                <div class="header__logo-wrapper">
+                    <div class="header__logo-inner-wrap">
+                        <a class="header__logo-link" href="/">
+                            <img class="header__logo-img" src="./images/site-logo.svg" alt="Site Logo" width="199" height="63">
+                        </a>
+                        <div class="header__top-text-wrapper">
+                            <p class="header__top-text">Первый цифровой международный юридический центр</p>
+                        </div>
+                    </div>
+                    <nav class="header__navbar navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">O компании</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">Услуги</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">Sirius</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">Тарифы</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">FAQ</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__contacts contact">
+                    <a class="contact__phone" href="88005113768">8 (800) 511-37-68</a>
+                    <a class="contact__sign-in" href="#">Войти</a>
+                    <button class="contact__mobile-btn">
+                        <img class="contact__mobile-img" src="./images/mobile.svg" alt="Sign in" width="12" height="22">
+                    </button>
+                    <button class="contact__hamburger-btn">
+                        <img class="contact__hamburger-img" src="./images/hamburger.svg" alt="Hamburger" width="22" height="22">
+                    </button>
+                </div>
             </div>
         </div>
     </header>
     <!-- Site Header end -->
     <!-- Site Main start -->
+    
     <main class="site-main">
+        <!-- Hero section start -->
+        
         <section class="hero-section">
             <div class="container">
-                <div class="hero">
+                <div class="hero__top">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Юридический полис ILC — быстрое решение сложных вопросов 24/7</h1>
+                        <div class="hero__text-wrapper">
+                            <p class="hero__doc">Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход 
+                                до $260 с каждого полиса, купленного по вашему приглашению.</p>
+                        </div>
+                        <a class="hero__link" href="#">Попробовать бесплатно</a>
+                    </div>
+                    <img class="hero__img" src="./images/hero-img.svg" alt="Hero img" width="438" height="564">
+                </div>
+                <div class="hero__service">
+                    <div class="hero__service-item">
+                        <img class="hero__service-img" src="./images/service-img1.svg" alt="Clock img" width="43" height="42">
+                        <div class="hero__service-wrap">
+                            <p class="hero__service-text">Юридическая поддержка 24/7</p>
+                        </div>
+                    </div>
+                    <div class="hero__service-item">
+                        <img class="hero__service-img" src="./images/service-img2.svg" alt="App img" width="39" height="40">
+                        <div class="hero__service-wrap">
+                            <p class="hero__service-text">Множество возможностей в одном полисе</p>
+                        </div>
+                    </div>
+                    <div class="hero__service-item">
+                        <img class="hero__service-img" src="./images/service-img3.svg" alt="Coin img" width="53" height="40">
+                        <div class="hero__service-wrap">
+                            <p class="hero__service-text">Бонусы партнерской программы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+        <!-- Site Main end -->
+        <!-- Site Footer start -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer">
                     <!-- ... -->
                 </div>
             </div>
-        </section>
-    </main>
-    <!-- Site Main end -->
-    <!-- Site Footer start -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer">
-                <!-- ... -->
-            </div>
-        </div>
-    </footer>
-    <!-- Site Footer end -->
-</body>
-</html>
+        </footer>
+        <!-- Site Footer end -->
+    </body>
+    </html>
